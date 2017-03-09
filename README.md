@@ -16,3 +16,7 @@ This is a copy of a file the author of the course has provided to get started. I
   - now is another option that actually uploads your files so you don't need to 'punch' a hole in your firewall
 - **browser sync**
   - NOTE TO SELF: investigate this more
+- **chalk**
+  - allows a user to specify the color of the text output to the console
+- **npm-run-all**
+  - runs multiple tasks for npm scripts in a cross platform way
