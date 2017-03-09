@@ -26,9 +26,26 @@ This is a copy of a file the author of the course has provided to get started. I
   - wrapper around eslint that just adds a file watcher, lints all js files including webpack configs ensuring consistent linting across the project
 - **eslint**
   - linter for es(current)
-  - eslint-loader works with webpack and only lints built files
-  - babel-eslint will lint experimental features that eslint won't on its own
+  - `eslint-loader` works with webpack and only lints built files
+  - `babel-eslint` will lint experimental features that eslint won't on its own
+- **mocha**
+  - doesn't have an assertion library build it
+  - `jasmine` and `jest` have assertion libraries build it
+- **chai**
+  - assertion library
+- **jsdom**
+  - simultates the DOM in node
+  - `cheerio` is an alternative, 'jQuery' for the DOM
+  - `karma` & `testum` test runners that utilize browser launchers
 
 #### npm scripts
 - **lint:w**
-  - *-- --watch* is what tells the npm scripts to pass the *--watch* argument to the *npm run lint* script command
+  - `-- --watch` is what tells the npm scripts to pass the `--watch` argument to the `npm run lint` script command
+
+#### CI
+- **travis**
+  - runs on linux
+  - configuration with `.travis.yml` file
+- **appveyor**
+  - runs on windows
+  - configuration with `appveyor.yml` file

@@ -9,8 +9,10 @@
     "securityscan": "node_modules/.bin/nsp check",
     "prestart": "babel-node build/startMessage.js",
     "share": "npm-run-all --parallel start localtunnel",
-    "start": "npm-run-all --parallel securityscan start:server lint:w",
-    "start:server": "babel-node build/server.js"
+    "start": "npm-run-all --parallel securityscan start:server lint:w test:w",
+    "start:server": "babel-node build/server.js",
+    "test": "mocha --reporter progress build/testSetup.js \"src/**/*.test.js\"",
+    "test:w": "npm run test -- --watch"
   },
   "author": "Cory House",
   "license": "MIT",
