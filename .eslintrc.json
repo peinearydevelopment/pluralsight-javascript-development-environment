@@ -1,0 +1,21 @@
+// github.com/dustinspecker/awesome-eslint
+{
+  "root": true, // this is the root linting conifiguration
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7, // current standard version
+    "sourceType": "module" // standard javascript modules
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 1
+  }
+}
