@@ -20,3 +20,5 @@ This is a copy of a file the author of the course has provided to get started. I
   - allows a user to specify the color of the text output to the console
 - **npm-run-all**
   - runs multiple tasks for npm scripts in a cross platform way
+- **babel-node**
+  - allows a user to utilize babel sytax for all of their node scripts
