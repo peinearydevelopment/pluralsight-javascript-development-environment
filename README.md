@@ -37,6 +37,14 @@ This is a copy of a file the author of the course has provided to get started. I
   - simultates the DOM in node
   - `cheerio` is an alternative, 'jQuery' for the DOM
   - `karma` & `testum` test runners that utilize browser launchers
+- **nock**
+  - mock http requests
+- **json-server**
+  - creates a development webserver
+  - create a fake db with static json files
+  - actually saves data to file
+- **json-schema-faker**
+  - creates fake data for you when you specify the data type
 
 #### npm scripts
 - **lint:w**
@@ -49,3 +57,12 @@ This is a copy of a file the author of the course has provided to get started. I
 - **appveyor**
   - runs on windows
   - configuration with `appveyor.yml` file
+
+#### Fake data generators
+**all come packaged with the json schema faker**
+- **faker.js**
+  - wide variety of functions for generating fake data including realistic names, phone numbers, emails, etc
+- **chance.js**
+  - wide variety of functions for generating fake data including realistic names, phone numbers, emails, etc
+- **randexp.js**
+  - creates random data based on regular expressions
