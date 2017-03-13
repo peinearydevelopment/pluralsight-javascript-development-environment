@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Embedded js syntax for conditionally rendering html, good for defining differences between prod and dev -->
+  <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+      <!--<script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+      <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>-->
+  <% } %>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,6 +28,5 @@
     Specify the polyfillable features in the qurey parameters.
     <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch"></script>
     -->
-  <script src="bundle.js"></script>
 </body>
 </html>
