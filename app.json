@@ -1,0 +1,7 @@
+// file describing app to heroku
+{
+  "name": "Node API example",
+  "description": "A simple API build in Node and Express hosted on Heroku",
+  "repository": "https://github.com/coryhouse/js-dev-env-demo-api",
+  "keywords": ["node", "express", "static"]
+}

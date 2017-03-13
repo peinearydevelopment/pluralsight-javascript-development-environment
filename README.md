@@ -45,6 +45,8 @@ This is a copy of a file the author of the course has provided to get started. I
   - actually saves data to file
 - **json-schema-faker**
   - creates fake data for you when you specify the data type
+- **cors**
+  - package for cors with express
 
 #### npm scripts
 - **lint:w**

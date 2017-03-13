@@ -1,4 +1,7 @@
 import express from 'express';
+
+// var cors = require('cors');
+
 import path from 'path';
 import open from 'open';
 
@@ -9,6 +12,9 @@ import config from '../webpack.config.dev';
 
 const port = 3000;
 const app = express();
+
+// app.use(cors());
+// app.set('port', (process.env.PORT || port));
 
 const compiler = webpack(config);
 

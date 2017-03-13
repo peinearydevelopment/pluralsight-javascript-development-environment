@@ -8,6 +8,7 @@
     "postbuild": "babel-node build/distServer.js",
 
     "clean-dist": "rimraf ./dist && mkdir dist",
+    "deploy": "surge ./dist",
     "generate-mock-data": "babel-node build/generateMockData",
     "lint": "esw webpack.config.* src build --color",
     "lint:w": "npm run lint -- --watch",
