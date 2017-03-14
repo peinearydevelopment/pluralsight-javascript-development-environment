@@ -1,3 +1,4 @@
+import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
@@ -6,6 +7,8 @@ export default {
   devtool: 'inline-source-map', // determines what level of output to be contained in transpiled files
   noInfo: false, // whether or not to display files transpiled in the command line window
   entry: [
+    'eventsource-polyfill', // necessary for hot reloading with IE
+    'webpack-hot-middleware/client?reload=true', // note that it reloads the page if hoot module reloading fails.
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
@@ -15,7 +18,8 @@ export default {
     filename: 'bundle.js'
   },
   plugins: [
-        new HtmlWebpackPlugin({ template: 'src/index.html', inject: true })
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({ template: 'src/index.html', inject: true })
   ],
   module: {
     loaders: [
